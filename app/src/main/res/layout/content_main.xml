@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.gonzalezcz.raul.smartbelt.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <Button
+        android:id="@+id/buttonAlertarSMS"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:drawable/ic_dialog_email"
+        android:text="Alertar SMS"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLlamada"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:drawable/sym_call_incoming"
+        android:text="LLamada de emergencia"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonHistorial"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:drawable/ic_menu_recent_history"
+        android:text="Ver historial"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAlertarSMS" />
+
+    <Button
+        android:id="@+id/buttonRutina"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:drawable/btn_star"
+        android:text="Recomendar rutina"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLlamada"  />
+
+    <Button
+        android:id="@+id/buttonConfiguracion"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:background="@android:drawable/ic_menu_upload"
+        android:text="Configuración"
+        android:layout_marginBottom="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
