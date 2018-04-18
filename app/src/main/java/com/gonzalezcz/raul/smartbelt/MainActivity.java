@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        //Test changes on Github
 
         bAlertarSMS = (Button) findViewById(R.id.buttonAlertarSMS);
         bLlamar = (Button) findViewById(R.id.buttonLlamada);
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent my_callIntent = new Intent(Intent.ACTION_CALL);
                     my_callIntent.setData(Uri.parse("tel:"+"+522221258203"));
                     //here the word 'tel' is important for making a call...
-                    startActivity(my_callIntent);
+                    //startActivity(my_callIntent);
                 } catch (ActivityNotFoundException e) {
                     Toast.makeText(getApplicationContext(), "Error in your phone call"+e.getMessage(), Toast.LENGTH_LONG).show();
                 }
